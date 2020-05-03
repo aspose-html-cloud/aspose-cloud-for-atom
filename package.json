@@ -1,0 +1,34 @@
+{
+  "name": "aspose-html-converter",
+  "main": "./lib/aspose-html-converter",
+  "version": "0.0.0",
+  "description": "Convert Markdown file to PDF document or HTML page",
+  "keywords": [
+    "markdown",
+    "pdf",
+    "export",
+    "convert"
+  ],
+  "activationCommands": {
+    "atom-workspace": [
+      "aspose-html-converter:convert-to-HTML",
+      "aspose-html-converter:convert-to-PDF",
+      "aspose-html-converter:open-settings",
+      "aspose-html-converter:export-settings"
+    ]
+  },
+  "repository": "https://github.com/aspose-html-cloud/aspose-html-converter-for-atom-io",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "node-fetch": "^2.6.0",
+    "path": "^0.12.7",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "tmp": "^0.1.0"
+  }
+}

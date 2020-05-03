@@ -1,0 +1,36 @@
+{
+  "context-menu": {
+    "atom-text-editor": [{
+        "label": "Aspose: Convert MD to HTML",
+        "command": "aspose-html-converter:convert-to-HTML"
+      },
+      {
+        "label": "Aspose: Convert MD to PDF",
+        "command": "aspose-html-converter:convert-to-PDF"
+      }
+    ]
+  },
+  "menu": [{
+    "label": "Packages",
+    "submenu": [{
+      "label": "Aspose HTML Converter",
+      "submenu": [{
+          "label": "Convert MD to HTML",
+          "command": "aspose-html-converter:convert-to-HTML"
+        },
+        {
+          "label": "Convert MD to PDF",
+          "command": "aspose-html-converter:convert-to-PDF"
+        },
+        {
+          "label": "Open Settings",
+          "command": "aspose-html-converter:open-settings"
+        },
+        {
+          "label": "Export Settings",
+          "command": "aspose-html-converter:export-settings"
+        }
+      ]
+    }]
+  }]
+}
