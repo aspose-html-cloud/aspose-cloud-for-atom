@@ -1,6 +1,6 @@
-# Aspose.HTML Converter
+# Aspose.Cloud Converter
 
-Aspose.HTML Converter is built with [Aspose.HTML Cloud](https://products.aspose.cloud/html/family)
+Aspose.Cloud Converter is built with [Aspose.Cloud](https://www.aspose.cloud/)
 It allows converting Markdown to HTML and PDF format.
 
 ## Features
@@ -61,4 +61,4 @@ Markdown Converter contributes the following settings:
 
 ### 0.0.1
 
-Initial release of Aspose.HTML Markdown Converter
+Initial release of Aspose.Cloud Markdown Converter
