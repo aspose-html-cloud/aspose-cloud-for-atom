@@ -1,7 +1,7 @@
 {
   "name": "aspose-cloud-converter",
   "main": "./lib/aspose-html-converter",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Convert Markdown file to PDF document or HTML page",
   "keywords": [
     "markdown",
