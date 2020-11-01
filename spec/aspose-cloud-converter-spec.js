@@ -1,6 +1,6 @@
 'use babel';
 
-import AsposeHtmlConverter from '../lib/aspose-html-converter';
+import AsposeHtmlConverter from '../lib/aspose-cloud-converter';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
@@ -12,32 +12,32 @@ describe('AsposeHtmlConverter', () => {
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('aspose-html-converter');
+    activationPromise = atom.packages.activatePackage('aspose-cloud-converter');
   });
 
-  describe('when the aspose-html-converter:toggle event is triggered', () => {
+  describe('when the aspose-cloud-converter:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.aspose-html-converter')).not.toExist();
+      expect(workspaceElement.querySelector('.aspose-cloud-converter')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'aspose-html-converter:toggle');
+      atom.commands.dispatch(workspaceElement, 'aspose-cloud-converter:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.aspose-html-converter')).toExist();
+        expect(workspaceElement.querySelector('.aspose-cloud-converter')).toExist();
 
-        let asposeHtmlConverterElement = workspaceElement.querySelector('.aspose-html-converter');
+        let asposeHtmlConverterElement = workspaceElement.querySelector('.aspose-cloud-converter');
         expect(asposeHtmlConverterElement).toExist();
 
         let asposeHtmlConverterPanel = atom.workspace.panelForItem(asposeHtmlConverterElement);
         expect(asposeHtmlConverterPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'aspose-html-converter:toggle');
+        atom.commands.dispatch(workspaceElement, 'aspose-cloud-converter:toggle');
         expect(asposeHtmlConverterPanel.isVisible()).toBe(false);
       });
     });
@@ -51,11 +51,11 @@ describe('AsposeHtmlConverter', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.aspose-html-converter')).not.toExist();
+      expect(workspaceElement.querySelector('.aspose-cloud-converter')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'aspose-html-converter:toggle');
+      atom.commands.dispatch(workspaceElement, 'aspose-cloud-converter:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,9 +63,9 @@ describe('AsposeHtmlConverter', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let asposeHtmlConverterElement = workspaceElement.querySelector('.aspose-html-converter');
+        let asposeHtmlConverterElement = workspaceElement.querySelector('.aspose-cloud-converter');
         expect(asposeHtmlConverterElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'aspose-html-converter:toggle');
+        atom.commands.dispatch(workspaceElement, 'aspose-cloud-converter:toggle');
         expect(asposeHtmlConverterElement).not.toBeVisible();
       });
     });
