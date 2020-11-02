@@ -1,6 +1,6 @@
-# Aspose.Cloud Converter
+# Aspose Cloud for Atom
 
-Aspose.Cloud Converter is built with [Aspose.Cloud](https://www.aspose.cloud/)
+Aspose Cloud for Atom is built with [aspose.cloud](https://www.aspose.cloud/)
 It allows converting Markdown to HTML and PDF format.
 
 ## Features
@@ -15,7 +15,7 @@ By default, all actions run in the current directory.
 
 ## Requirements
 
-We use the `node-fetch` module to makes [API calls](https://docs.aspose.cloud/display/htmlcloud/).
+We use the `node-fetch` module to make [API calls](https://docs.aspose.cloud/display/htmlcloud/).
 
 ## Usage
 
@@ -56,9 +56,3 @@ Markdown Converter contributes the following settings:
 ## Known Issues
 
 * MD-to-PDF conversion: The `@page` CSS at-rule can be applied incorrectly.
-
-## Release Notes
-
-### 0.0.1
-
-Initial release of Aspose.Cloud Markdown Converter

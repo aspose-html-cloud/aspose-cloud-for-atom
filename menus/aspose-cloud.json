@@ -2,33 +2,33 @@
   "context-menu": {
     "atom-text-editor": [{
         "label": "Aspose: Convert MD to HTML",
-        "command": "aspose-cloud-converter:convert-to-HTML"
+        "command": "aspose-cloud:convert-to-HTML"
       },
       {
         "label": "Aspose: Convert MD to PDF",
-        "command": "aspose-cloud-converter:convert-to-PDF"
+        "command": "aspose-cloud:convert-to-PDF"
       }
     ]
   },
   "menu": [{
     "label": "Packages",
     "submenu": [{
-      "label": "Aspose.Cloud Converter",
+      "label": "Aspose Cloud for Atom",
       "submenu": [{
           "label": "Convert MD to HTML",
-          "command": "aspose-cloud-converter:convert-to-HTML"
+          "command": "aspose-cloud:convert-to-HTML"
         },
         {
           "label": "Convert MD to PDF",
-          "command": "aspose-cloud-converter:convert-to-PDF"
+          "command": "aspose-cloud:convert-to-PDF"
         },
         {
           "label": "Open Settings",
-          "command": "aspose-cloud-converter:open-settings"
+          "command": "aspose-cloud:open-settings"
         },
         {
           "label": "Export Settings",
-          "command": "aspose-cloud-converter:export-settings"
+          "command": "aspose-cloud:export-settings"
         }
       ]
     }]
