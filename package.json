@@ -29,6 +29,6 @@
     "uuid": "^7.0.2"
   },
   "devDependencies": {
-    "tmp": "^0.1.0"
+    "tmp": "^0.2.4"
   }
 }
